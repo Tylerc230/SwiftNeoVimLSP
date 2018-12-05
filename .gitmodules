@@ -1,0 +1,3 @@
+[submodule "sourcekit-lsp"]
+	path = sourcekit-lsp
+	url = https://github.com/apple/sourcekit-lsp
