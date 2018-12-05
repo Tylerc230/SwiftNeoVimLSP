@@ -21,7 +21,11 @@ call dein#install()
 autocmd BufNewFile,BufRead *.swift set filetype=swift
 let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = { 'python': ['/usr/local/bin/pyls'], 'swift': ['~/Desktop/vim_lsp/sourcekit-lsp/.build/debug/sourcekit-lsp'] }
+let g:LanguageClient_rootMarkers = {
+      \ 'swift': ['Package.swift'],
+      \ }
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 
 filetype plugin indent on
 syntax enable
