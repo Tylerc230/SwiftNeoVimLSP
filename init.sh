@@ -3,7 +3,7 @@ git submodule update --init
 pushd sourcekit-lsp
 swift build
 popd
-pushd my_swift
+pushd MySwiftPackage
 swift build
 popd
 nvim +UpdateRemotePlugins +qa

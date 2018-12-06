@@ -1,14 +1,14 @@
-https://github.com/apple/sourcekit-lsp
+https://github.com/Shougo/dein.vim
+https://github.com/Shougo/deoplete.nvim
 https://github.com/autozimu/LanguageClient-neovim
+https://github.com/apple/sourcekit-lsp
 todo:
-make 'init.sh'
-and 'tryit.sh'
 fix absolute paths
-make submodule
 
 Mention project marker
 
 steps:
+init:
 git submodule update --init
 swift build sourcekit-lsp
 swift build (out project)
