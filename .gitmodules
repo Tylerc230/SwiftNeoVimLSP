@@ -1,3 +1,6 @@
+[submodule "cache/dein/repos/github.com/Shougo/dein.vim"]
+	path = cache/dein/repos/github.com/Shougo/dein.vim
+	url = git@github.com:Shougo/dein.vim.git
 [submodule "sourcekit-lsp"]
 	path = sourcekit-lsp
-	url = https://github.com/apple/sourcekit-lsp
+	url = git@github.com:apple/sourcekit-lsp.git

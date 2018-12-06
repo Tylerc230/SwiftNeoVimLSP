@@ -3,14 +3,14 @@ if &compatible
 endif
 " Add the dein installation directory into runtimepath
 let install_dir = expand("<sfile>:p:h")
-let dein_path = install_dir . "/vim/bundle/repos/github.com/Shougo/dein.vim"
-let &runtimepath.=','.escape(dein_path, '\,')
 let dein_cache_path = install_dir . "/cache/dein"
+let dein_path = dein_cache_path . "/repos/github.com/Shougo/dein.vim"
+let &runtimepath.=','.escape(dein_path, '\,')
 
 if dein#load_state(dein_cache_path)
   call dein#begin(dein_cache_path)
 
-  call dein#add(dein_cache_path . '/repos/github.com/Shougo/dein.vim')
+  call dein#add(dein_path)
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('autozimu/LanguageClient-neovim', {
         \ 'rev': 'next',
